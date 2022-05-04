@@ -1,0 +1,147 @@
+@import "variables.scss";
+
+// **************************************************
+// **************** NEWS SECTION ********************
+// **************************************************
+
+.news-section {
+	padding: 9.6rem 0 3.2rem 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	.news-list {
+		list-style-type: none;
+		.news-preview {
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+			padding: 2.4rem 0;
+			position: relative;
+			.news-title a {
+				color: $news-text;
+				text-decoration: underline;
+				font-size: 3.2rem;
+				padding-bottom: 1.6rem;
+			}
+
+			.news-event::after {
+				content: "Event";
+				position: absolute;
+				top: 10;
+				right: 0;
+
+				background-color: $primary-green;
+				color: #fff;
+				padding: 0.2rem 0.8rem;
+				font-size: 1.6rem;
+				font-weight: 400;
+			}
+			.date {
+				color: $news-date;
+				font-size: 1.4rem;
+			}
+
+			.news-text {
+				font-size: 1.6rem;
+				color: $news-paragraph;
+				letter-spacing: 0.5px;
+			}
+
+			hr {
+				margin-top: 2.4rem;
+			}
+		}
+	}
+}
+
+// ********************************************REMOVE THIS
+.block {
+	padding: 50rem;
+	height: 100rem;
+}
+
+.page-selector {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 3.2rem;
+	.pagination {
+		list-style: none;
+		display: flex;
+		gap: 0.8rem;
+
+		.pagi-link {
+			font-size: 1.8rem;
+			span {
+				color: $text-link;
+			}
+		}
+		.number-link a {
+			text-decoration: none;
+		}
+		.current {
+			background-color: $primary-yellow;
+		}
+	}
+}
+
+.newsletter {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+
+	&-container {
+		background-color: $background-green;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 7.2rem;
+		row-gap: 3.2rem;
+		width: 140rem;
+		padding: 4rem 3.2rem;
+
+		.newsletter-header {
+			font-size: 2.4rem;
+		}
+
+		.newsletter-text {
+			justify-content: center;
+			align-items: center;
+			font-size: 1.8rem;
+			padding-top: 2.4rem;
+			letter-spacing: 0.2px;
+			line-height: 1.3;
+		}
+		.unsub {
+			font-size: 1.8rem;
+			padding-top: 2.4rem;
+		}
+
+		.privacy-policy {
+			grid-column: span 2;
+			font-size: 1.6rem;
+			.pp-link a {
+				color: $primary-yellow;
+				text-decoration: underline;
+			}
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1.2rem;
+
+			padding-top: 4.8rem;
+
+			input[type="email"],
+			select {
+				align-self: stretch;
+				border: none;
+				height: 4.2rem;
+				padding-left: 1.2rem;
+				font-size: 1.6rem;
+			}
+		}
+	}
+}

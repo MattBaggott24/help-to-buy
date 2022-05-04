@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  outline: 3px solid #009292;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+body {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol li {
+  display: list-item;
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.logo {
+  height: 7.2rem;
+  width: 7.2rem;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.8rem 16.8rem;
+}
+
+.nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.6rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav-list-link,
+.nav .nav-list a {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.nav .nav-list-link:hover,
+.nav .nav-list a:hover {
+  color: #fd0;
+}
+
+.nav .nav-list .active-link {
+  border-bottom: 4px solid #fd0;
+  color: #fd0;
+}
+
+.container {
+  width: 100rem;
+}
+
+.header {
+  background-color: #006469;
+}
+
+.btn {
+  border: none;
+  padding: 1rem 1.8rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sign-in-btn {
+  background-color: #009292;
+  -webkit-box-shadow: 0 0.3rem 0 0 #fd0;
+          box-shadow: 0 0.3rem 0 0 #fd0;
+}
+
+.sign-in-btn:hover, .sign-in-btn:active, .sign-in-btn:focus {
+  outline: 3px solid #009292;
+  -webkit-box-shadow: 0 0.5rem 0 0.3rem #009292;
+          box-shadow: 0 0.5rem 0 0.3rem #009292;
+  background-color: #fd0;
+}
+
+.sign-in-btn:hover {
+  outline: none;
+  -webkit-box-shadow: 0 0.3rem 0 0 #009292;
+          box-shadow: 0 0.3rem 0 0 #009292;
+}
+
+.primary-btn {
+  background-color: #fd0;
+  color: #006469;
+  -webkit-box-shadow: 0 0.3rem 0 0 #009292;
+          box-shadow: 0 0.3rem 0 0 #009292;
+  font-weight: 600;
+}
+
+.primary-btn:hover, .primary-btn:active, .primary-btn:focus {
+  background-color: #009292;
+  color: #009292;
+  -webkit-box-shadow: 0 0.4rem 0 0 #fd0;
+          box-shadow: 0 0.4rem 0 0 #fd0;
+}
+
+.primary-btn:active, .primary-btn:focus {
+  outline: none;
+  color: #fd0;
+}
+
+.secondary-btn {
+  background-color: #daf2f2;
+  -webkit-box-shadow: 0 0.3rem 0 0 #4c4c4c;
+          box-shadow: 0 0.3rem 0 0 #4c4c4c;
+}
+
+.secondary-btn:hover {
+  background-color: #a1e6e6;
+}
+
+.secondary-btn:active, .secondary-btn:focus {
+  outline: 3px solid #009292;
+  -webkit-box-shadow: 0 0.5rem 0 0.3rem #4c4c4c;
+          box-shadow: 0 0.5rem 0 0.3rem #4c4c4c;
+  background-color: #a1e6e6;
+}
+
+.text-link {
+  color: #1c9d9d;
+  display: inline-block;
+  padding: 0 0.6rem;
+  text-decoration: underline;
+}
+
+.text-link:hover, .text-link:focus {
+  background-color: #fd0;
+  color: #136c60;
+}
+
+.text-link.dark-bg {
+  color: #fff;
+}
+
+.text-link.dark-bg:hover {
+  color: #136c60;
+}
+
+.dark-bg:hover {
+  color: #fd0;
+}
+
+.heading-primary {
+  font-weight: 600;
+  font-size: 4.8rem;
+  color: #016469;
+  padding-bottom: 2.4rem;
+}
+
+.footer {
+  padding-top: 6.4rem;
+}
+
+.footer-container {
+  background-color: #006469;
+  width: 100%;
+  height: 30rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  color: #fff;
+  padding: 4.8rem 32rem;
+  -webkit-column-gap: 8rem;
+          column-gap: 8rem;
+}
+
+.footer-container .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.footer-container .socials .social-header {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.footer-container .socials .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.2rem;
+  list-style: none;
+}
+
+.footer-container .socials .social-list .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.6rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .socials .social-list .social .social-icon {
+  color: #fff;
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.footer-container .socials .social-list .social .social-link {
+  font-size: 1.6rem;
+}
+
+.footer-container .footer-links {
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+.footer-container .footer-links .footer-link {
+  padding: 1.2rem;
+}
+
+.footer-container .agent-btn {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.footer-container .logo-copyright {
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-container .logo-copyright img {
+  height: 8.4rem;
+  width: 8.4rem;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.primary-header {
+  font-size: 3.2rem;
+  color: #006469;
+}
+
+.selection-option {
+  color: #1c9d9d;
+  text-decoration: none;
+}
+
+.selection-option .selection-link {
+  text-decoration: none;
+}
+
+.form-container {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 3.2rem 3.2rem;
+  font-size: 1.2rem;
+  color: #4c4c4c;
+  font-size: 1.6rem;
+}
+
+.form-container .next-btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.form-container .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+}
+
+.form-container .form-section .secondary-heading {
+  color: #006469;
+  padding-bottom: 2.4rem;
+}
+
+.form-container .form-section .single-joint-header {
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+}
+
+.form-container .form-section .s-j-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.form-container .scheme-radio {
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: orange;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-container .scheme-header {
+  font-weight: 600;
+  padding-bottom: 1.2rem;
+}
+
+.form-container .scheme-select {
+  height: 4.2rem;
+  width: 32rem;
+}
+
+.form-container .radio-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.2rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.form-container .radio-container label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-container .bedrooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form-container .bedrooms label {
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-container .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-container .checkboxes .reason {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.form-container .checkboxes .reason label {
+  display: inline-block;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.form-container .checkboxes .reason input[type="checkbox"] {
+  height: 3.2rem;
+  width: 3.2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: 1px solid #4c4c4c;
+  border-radius: none;
+}
+/*# sourceMappingURL=application-form.css.map */

@@ -1,0 +1,112 @@
+@import "variables.scss";
+@import "main.scss";
+
+body {
+	background-color: $form-background;
+}
+
+.primary-header {
+	font-size: 3.2rem;
+	color: $primary-text;
+}
+
+.selection-option {
+	color: $text-link;
+	text-decoration: none;
+	.selection-link {
+		text-decoration: none;
+	}
+}
+
+.form-container {
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 3.2rem 3.2rem;
+	font-size: 1.2rem;
+	color: $secondary-text;
+	font-size: 1.6rem;
+
+	.next-btn {
+		align-self: flex-start;
+	}
+	.form-section {
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+		.secondary-heading {
+			color: $primary-text;
+			padding-bottom: 2.4rem;
+		}
+
+		.single-joint {
+			&-header {
+				font-weight: 600;
+				padding-bottom: 1.2rem;
+			}
+		}
+		.s-j-container {
+			display: flex;
+			gap: 1.2rem;
+		}
+	}
+
+	.scheme-radio {
+		width: 2.4rem;
+		height: 2.4rem;
+		background-color: orange;
+		align-self: center;
+	}
+
+	.scheme-header {
+		font-weight: 600;
+		padding-bottom: 1.2rem;
+	}
+
+	.scheme-select {
+		height: 4.2rem;
+		width: 32rem;
+	}
+
+	.radio-container {
+		display: flex;
+		gap: 0.8rem;
+		padding: 0.2rem;
+		align-content: center;
+
+		label {
+			align-self: center;
+		}
+	}
+
+	.bedrooms {
+		display: flex;
+		flex-direction: column;
+
+		label {
+			display: inline-block;
+			align-self: center;
+		}
+	}
+
+	.checkboxes {
+		display: flex;
+		flex-direction: column;
+		gap: 1.2rem;
+
+		.reason {
+			display: flex;
+			gap: 0.8rem;
+			label {
+				display: inline-block;
+				align-self: center;
+			}
+			input[type="checkbox"] {
+				height: 3.2rem;
+				width: 3.2rem;
+				appearance: none;
+				outline: 1px solid $secondary-text;
+				border-radius: none;
+			}
+		}
+	}
+}

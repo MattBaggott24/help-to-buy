@@ -1,0 +1,241 @@
+@import "variables.scss";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	&:focus {
+		outline: none;
+		outline: 3px solid $primary-green;
+	}
+}
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+body {
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+}
+
+ol {
+	li {
+		display: list-item;
+		list-style: decimal;
+		list-style-position: inside;
+	}
+}
+
+.logo {
+	height: 7.2rem;
+	width: 7.2rem;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	padding: 0.8rem 16.8rem;
+
+	.nav-list {
+		display: flex;
+		gap: 3.6rem;
+
+		list-style: none;
+		align-items: center;
+
+		&-link,
+		a {
+			font-size: 2rem;
+			color: #fff;
+			font-weight: 600;
+			display: inline-block;
+			padding: 0.5rem 0;
+
+			&:hover {
+				color: $primary-yellow;
+			}
+		}
+
+		.active-link {
+			border-bottom: 4px solid $primary-yellow;
+			color: $primary-yellow;
+		}
+	}
+}
+
+.container {
+	width: 100rem;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.header {
+	background-color: $background-green;
+}
+
+.btn {
+	border: none;
+	padding: 1rem 1.8rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+.sign-in-btn {
+	background-color: $primary-green;
+	box-shadow: 0 0.3rem 0 0 $primary-yellow;
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: 3px solid $primary-green;
+		box-shadow: 0 0.5rem 0 0.3rem $primary-green;
+		background-color: $primary-yellow;
+	}
+	&:hover {
+		outline: none;
+		box-shadow: 0 0.3rem 0 0 $primary-green;
+	}
+}
+
+.primary-btn {
+	background-color: $primary-yellow;
+	color: $primary-text;
+	box-shadow: 0 0.3rem 0 0 $primary-green;
+	font-weight: 600;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background-color: $primary-green;
+		color: $primary-green;
+		box-shadow: 0 0.4rem 0 0 $primary-yellow;
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		color: $primary-yellow;
+	}
+}
+
+.secondary-btn {
+	background-color: $secondary-green;
+	box-shadow: 0 0.3rem 0 0 $secondary-text;
+
+	&:hover {
+		background-color: $secondary-hover;
+	}
+	&:active,
+	&:focus {
+		outline: 3px solid $primary-green;
+		box-shadow: 0 0.5rem 0 0.3rem $secondary-text;
+		background-color: $secondary-hover;
+	}
+}
+
+.text-link {
+	color: $text-link;
+	display: inline-block;
+	padding: 0 0.6rem;
+	text-decoration: underline;
+	&:hover,
+	&:focus {
+		background-color: $primary-yellow;
+		color: $text-link-hover;
+	}
+}
+
+.text-link.dark-bg {
+	color: #fff;
+	&:hover {
+		color: $text-link-hover;
+	}
+}
+
+.dark-bg:hover {
+	color: $primary-yellow;
+}
+
+.heading-primary {
+	font-weight: 600;
+	font-size: 4.8rem;
+	color: $news-text;
+	padding-bottom: 2.4rem;
+}
+
+.footer {
+	padding-top: 6.4rem;
+	&-container {
+		background-color: $background-green;
+		width: 100%;
+		height: 30rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		color: #fff;
+		padding: 4.8rem 32rem;
+		column-gap: 8rem;
+
+		.socials {
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+			.social-header {
+				font-size: 1.8rem;
+				font-weight: 500;
+			}
+			.social-list {
+				display: flex;
+				gap: 1.6rem;
+				font-size: 1.2rem;
+				list-style: none;
+
+				.social {
+					display: flex;
+					gap: 0.6rem;
+					align-items: center;
+					.social-icon {
+						color: #fff;
+						height: 3.2rem;
+						width: 3.2rem;
+					}
+					.social-link {
+						font-size: 1.6rem;
+					}
+				}
+			}
+		}
+
+		.footer-links {
+			font-size: 1.8rem;
+			display: inline-block;
+			.footer-link {
+				padding: 1.2rem;
+			}
+		}
+		.agent-btn {
+			justify-self: end;
+			align-self: flex-end;
+		}
+		.logo-copyright {
+			font-size: 1.4rem;
+			display: flex;
+			align-items: center;
+
+			img {
+				height: 8.4rem;
+				width: 8.4rem;
+			}
+		}
+	}
+}
