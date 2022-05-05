@@ -55,12 +55,6 @@
 	}
 }
 
-// ********************************************REMOVE THIS
-.block {
-	padding: 50rem;
-	height: 100rem;
-}
-
 .page-selector {
 	display: flex;
 	align-items: center;
@@ -79,9 +73,6 @@
 		}
 		.number-link a {
 			text-decoration: none;
-		}
-		.current {
-			background-color: $primary-yellow;
 		}
 	}
 }

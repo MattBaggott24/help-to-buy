@@ -62,11 +62,6 @@
   margin-top: 2.4rem;
 }
 
-.block {
-  padding: 50rem;
-  height: 100rem;
-}
-
 .page-selector {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,10 +93,6 @@
 
 .page-selector .pagination .number-link a {
   text-decoration: none;
-}
-
-.page-selector .pagination .current {
-  background-color: #fd0;
 }
 
 .newsletter {

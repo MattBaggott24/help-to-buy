@@ -1,3 +1,8 @@
+.block {
+  padding: 50rem;
+  height: 100rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +32,11 @@ ol li {
   display: list-item;
   list-style: decimal;
   list-style-position: inside;
+}
+
+.primary-header {
+  font-size: 4.8rem;
+  color: #006469;
 }
 
 .logo {
@@ -95,6 +105,8 @@ ol li {
   font-size: 2.2rem;
   font-weight: 500;
   cursor: pointer;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .sign-in-btn {
@@ -177,11 +189,48 @@ ol li {
   color: #fd0;
 }
 
+.current {
+  background-color: #fd0;
+}
+
 .heading-primary {
   font-weight: 600;
   font-size: 4.8rem;
   color: #016469;
   padding-bottom: 2.4rem;
+}
+
+.page-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 3.2rem;
+}
+
+.page-selector .pagination {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.page-selector .pagination .pagi-link {
+  font-size: 1.8rem;
+}
+
+.page-selector .pagination .pagi-link span {
+  color: #1c9d9d;
+}
+
+.page-selector .pagination .number-link a {
+  text-decoration: none;
 }
 
 .footer {
