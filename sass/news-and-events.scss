@@ -55,28 +55,6 @@
 	}
 }
 
-.page-selector {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding-bottom: 3.2rem;
-	.pagination {
-		list-style: none;
-		display: flex;
-		gap: 0.8rem;
-
-		.pagi-link {
-			font-size: 1.8rem;
-			span {
-				color: $text-link;
-			}
-		}
-		.number-link a {
-			text-decoration: none;
-		}
-	}
-}
-
 .newsletter {
 	color: #fff;
 	display: flex;
