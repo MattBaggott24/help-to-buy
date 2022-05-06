@@ -1,6 +1,12 @@
 .block {
   padding: 50rem;
-  height: 150rem;
+  height: 200rem;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+  cursor: pointer;
 }
 
 * {
@@ -354,6 +360,17 @@ body {
   background-color: #f2f2f2;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 0 12rem;
+}
+
 .prop-search {
   margin: 0 auto;
   width: 80rem;
@@ -364,7 +381,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.4rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -546,6 +563,9 @@ body {
   background-color: #006469;
   color: #fff;
   padding: 3.2rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 3.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -554,6 +574,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2.2rem;
+  width: 30rem;
   font-size: 1.6rem;
 }
 
@@ -578,8 +599,23 @@ body {
 }
 
 .search-section .location-search .location-input {
-  height: 3.2rem;
+  height: 4.2rem;
   padding: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.search-section .location-search .filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-section .location-search .filters .filter-icon {
+  height: 2.8rem;
+  width: 2.8rem;
 }
 
 .search-section .buy-rent {
@@ -605,8 +641,8 @@ body {
 }
 
 .search-section .buy-rent .buy-rent-radio .type-radio {
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -629,11 +665,147 @@ body {
   background-color: #006469;
   border: 2px solid #fff;
   color: #fff;
+  padding-left: 0.6rem;
+  cursor: pointer;
 }
 
 .search-section .small-selection {
+  width: 16rem;
+}
+
+.search-section .large-selection {
+  width: 24rem;
+}
+
+.search-section .must-have {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.search-section .must-have .check-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.search-section .must-have .check-option .must-have-checks {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 2px solid #fff;
   height: 3.2rem;
-  width: 12rem;
-  background-color: #006469;
+  width: 3.2rem;
+}
+
+.search-section .must-have .check-option .must-have-checks:checked {
+  stroke: #fd0;
+}
+
+.search-section .must-have .check-option .must-have-checks:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check-contain {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.4rem;
+}
+
+.check-contain *,
+.check-contain *::before,
+.check-contain *::after {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+.check-contain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.check-contain span {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding-left: 2.4rem;
+}
+
+.check-contain {
+  display: table;
+  position: relative;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 0rem;
+}
+
+.check-contain input[type="radio"] ~ .check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(241, 245, 248, 0);
+  -webkit-transition: background 250ms;
+  transition: background 250ms;
+  border: 2px solid white;
+  border-radius: 2rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 1rem;
+  top: 0.18rem;
+  width: 1rem;
+  height: 2rem;
+  border: solid #ffdd00;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check-contain input[type="radio"] ~ .check-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 0.25rem;
+  top: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2rem;
+  background: #ffdd00;
+}
+
+.check-contain input:checked ~ .check-input::after {
+  display: block;
 }
 /*# sourceMappingURL=property-search.css.map */

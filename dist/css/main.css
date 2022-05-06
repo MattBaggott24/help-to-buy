@@ -1,6 +1,12 @@
 .block {
   padding: 50rem;
-  height: 150rem;
+  height: 200rem;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+  cursor: pointer;
 }
 
 * {

@@ -36,7 +36,7 @@
 			</nav>
 		</header>
 
-		<main>
+		<main class="main">
 			<div class="container prop-search">
 				<div class="container description-section">
 					<h1 class="primary-header">Property Search</h1>
@@ -345,15 +345,12 @@
 					</ul>
 				</section>
 			</div>
-		</main>
-
-		<div class="block">
 			<aside class="search-section">
 				<h2 class="secondary-heading">Search</h2>
 
 				<div class="location-search">
 					<label for="location-input" class="search-label">Location</label>
-					<input type="text" class="location-input" id="location-input" />
+					<input type="text" class="location-input" id="location-input" placeholder="Town or Postcode" />
 					<div class="filters">
 						<svg
 							class="filter-icon"
@@ -434,17 +431,23 @@
 				</div>
 
 				<div class="must-have">
-					<input type="checkbox" class="must-have-checks" id="off-street" />
-					<label for="off-street">Off-street parking</label>
-
-					<input type="checkbox" class="garage" id="garage" />
-					<label for="garage">Garage</label>
+					<label class="check-contain">
+						<span>Off-street parking</span>
+						<input type="checkbox" />
+						<div class="check-input"></div>
+					</label>
+					<label class="check-contain">
+						<span>Garage</span>
+						<input type="checkbox" />
+						<div class="check-input"></div>
+					</label>
 				</div>
 
 				<button class="btn primary-btn dark-bg">Submit</button>
 			</aside>
-		</div>
+		</main>
 
+		<!-- <div class="block"></div> -->
 		<footer class="footer">
 			<div class="footer-container">
 				<div class="socials">
