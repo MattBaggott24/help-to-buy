@@ -1,2 +1,313 @@
 @import "variables";
 @import "main.scss";
+
+.placeholder-img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $light-grey-background;
+	border: 2px solid grey;
+
+	height: 35rem;
+	width: 100%;
+
+	position: relative;
+}
+
+.search-container {
+	background-color: $background-green;
+	padding: 2.4rem 6.4rem;
+
+	display: flex;
+	margin: 0 auto;
+	gap: 2.4rem;
+	width: 80vw;
+
+	align-items: center;
+	justify-content: center;
+
+	font-size: 1.6rem;
+
+	.search-header {
+		font-size: 3.2rem;
+		font-weight: 600;
+		color: #fff;
+	}
+
+	.search-group {
+		display: flex;
+		gap: 0.8rem;
+
+		.search-bar {
+			height: 4.5rem;
+			width: 32rem;
+			border: none;
+			padding: 1.2rem;
+			font-size: 1.8rem;
+		}
+	}
+}
+
+.link-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+	gap: 3.2rem;
+
+	background-color: $form-background;
+	.subheader {
+		font-size: 2.4rem;
+		color: $primary-text;
+	}
+
+	.link-options {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2.4rem;
+		width: 80vw;
+
+		.option {
+			display: grid;
+			flex-direction: column;
+
+			padding: 3.6rem;
+
+			gap: 2.4rem;
+			color: $secondary-text;
+			font-size: 1.8rem;
+			text-align: center;
+
+			background-color: #fff;
+
+			button {
+				align-self: center;
+				justify-self: center;
+				width: 20rem;
+			}
+
+			p {
+				justify-self: start;
+			}
+
+			.option-icon {
+				fill: $primary-green;
+				height: 7.2rem;
+				width: 7.2rem;
+				justify-self: center;
+			}
+			.flip {
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}
+
+.buyer-stories {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+	padding: 3.2rem;
+	padding-bottom: 4.8rem;
+
+	.secondary-header {
+		font-size: 3.2rem;
+		color: $secondary-text;
+		align-self: center;
+	}
+
+	.story-container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 7.2rem;
+
+		width: 80vw;
+
+		.story {
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+
+			border-bottom: 1px solid $secondary-text;
+
+			p {
+				color: $secondary-text;
+				font-size: 2rem;
+				line-height: 1.5;
+				margin-bottom: 3.2rem;
+			}
+
+			.story-header {
+				font-size: 2.8rem;
+				color: $background-green;
+				padding: 0;
+			}
+			.small-img-placeholder {
+				align-self: center;
+				height: 20rem;
+				width: 80%;
+				background-color: $light-grey-background;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 1.8rem;
+				color: grey;
+			}
+		}
+	}
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	width: 35rem;
+	margin: 0 auto;
+}
+
+.equity-loan-container {
+	width: 80vw;
+	background-color: $background-green;
+	.equity-loan {
+		width: 95rem;
+		display: flex;
+		flex-direction: column;
+		gap: 3.2rem;
+
+		color: #fff;
+		font-size: 1.6rem;
+		padding: 4.8rem;
+
+		align-items: center;
+
+		.secondary-header {
+			font-size: 2.8rem;
+		}
+
+		.slider-section {
+			background-color: orange;
+			padding: 1.2rem 3.2rem;
+			border-radius: 9px;
+		}
+
+		.radio-container {
+			display: flex;
+			flex-direction: column;
+			gap: 2.4rem;
+
+			p {
+				font-size: 2.2rem;
+			}
+			.radios {
+				display: flex;
+				gap: 2.4rem;
+				padding: 0 0.4rem;
+				.type-radio {
+					width: 2.2rem;
+					height: 2.2rem;
+					align-self: center;
+
+					appearance: none;
+					border-radius: 50%;
+					box-shadow: 0 0 0 1px white;
+
+					&:checked {
+						border: 5px solid $background-green;
+						background-color: $primary-yellow;
+					}
+				}
+				label {
+					margin: 0.6rem;
+				}
+			}
+		}
+		.loan-table {
+			font-size: 2.2rem;
+			color: white;
+
+			td {
+				padding: 1.2rem 2.4rem;
+			}
+
+			.yellow {
+				color: $primary-yellow;
+			}
+		}
+
+		.repo-warning {
+			font-weight: 600;
+			font-size: 2.4rem;
+		}
+	}
+
+	.disclaimer-text {
+		display: flex;
+		flex-direction: column;
+		gap: 2.4rem;
+	}
+}
+
+.news-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.4rem;
+	padding: 3.2rem;
+
+	.heading-secondary {
+		font-size: 3.2rem;
+		color: $secondary-text;
+		align-self: center;
+	}
+	.news-events {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 7.2rem;
+
+		width: 80vw;
+		.news-preview {
+			display: flex;
+			flex-direction: column;
+			gap: 1.2rem;
+
+			border-bottom: 1px solid $secondary-text;
+
+			position: relative;
+			.news-title a {
+				color: $news-text;
+				text-decoration: underline;
+				font-size: 2.4rem;
+				padding-bottom: 1.6rem;
+			}
+
+			.news-event::after {
+				content: "Event";
+				position: absolute;
+				top: 22.5%;
+				right: 15%;
+
+				background-color: $primary-green;
+				color: #fff;
+				padding: 0.2rem 0.8rem;
+				font-size: 1.6rem;
+				font-weight: 400;
+			}
+			.date {
+				color: $news-date;
+				font-size: 1.6rem;
+			}
+
+			.news-text {
+				font-size: 1.8rem;
+				color: $news-paragraph;
+				letter-spacing: 0.5px;
+				line-height: 1.5;
+				padding-bottom: 3.2rem;
+			}
+		}
+	}
+	.news-btn {
+		grid-column: 2;
+		justify-self: center;
+		align-self: center;
+	}
+}

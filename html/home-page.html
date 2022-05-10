@@ -18,15 +18,15 @@
 				<div class="nav-links">
 					<ul class="nav-list">
 						<li class="nav-list-link">
-							<a class="active-link" href="#">Link One</a>
+							<a id="nav1" class="nav-link active-link" href="home-page.html">Link One</a>
 						</li>
-						<li class="nav-list-link"><a href="#">Link Two</a></li>
+						<li class="nav-list-link"><a id="nav2" class="nav-link" href="property-search.html">Link Two</a></li>
 						<li class="nav-list-link">
-							<a href="#">Link Three</a>
+							<a id="nav3" class="nav-link" href="listing-page.html">Link Three</a>
 						</li>
-						<li class="nav-list-link"><a href="#">Link Four</a></li>
+						<li class="nav-list-link"><a id="nav4" class="nav-link" href="news-and-events.html">Link Four</a></li>
 						<li class="nav-list-link">
-							<a href="#">Link Five</a>
+							<a id="nav5" class="nav-link" href="application-form.html">Link Five</a>
 						</li>
 						<li>
 							<button class="btn sign-in-btn">Sign In</button>
@@ -35,8 +35,252 @@
 				</div>
 			</nav>
 		</header>
+		
+		<main>
+			<div class="placeholder-img">img goes here</div>
 
-		<main></main>
+			<!-- TODO::: overlap the search bar -->
+
+			<div class="search-container center">
+				<p class="search-header">Property Search</p>
+				<div class="search-group">
+					<input type="text" class="search-bar" aria-label="search bar" placeholder="Enter a town, region or postcode" />
+					<button class="btn primary-btn dark-bg">Search</button>
+				</div>
+				<a href="#" class="text-link dark-bg">Advanced search</a>
+			</div>
+
+			<div class="link-section">
+				<h2 class="subheader">We're xxx - Help to Buy agent for London and the Midlands</h2>
+
+				<div class="link-options">
+					<div class="option buying-options">
+						<svg
+							class="option-icon flip"
+							stroke="currentColor"
+							fill="currentColor"
+							stroke-width="0"
+							viewBox="0 0 512 512"
+							height="1em"
+							width="1em"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z"
+							></path>
+							<path
+								d="M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z"
+							></path>
+						</svg>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare est id nunc dictum, ac</p>
+						<button class="btn primary-btn">Buying options</button>
+					</div>
+					<div class="option calculator">
+						<svg
+							class="option-icon"
+							stroke="currentColor"
+							fill="currentColor"
+							stroke-width="0"
+							viewBox="0 0 24 24"
+							height="1em"
+							width="1em"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M12 19c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM6 1c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12-8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-6 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+							></path>
+						</svg>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce</p>
+						<button class="btn primary-btn">Calculator</button>
+					</div>
+					<div class="option apply">
+						<svg
+							class="option-icon"
+							stroke="currentColor"
+							fill="currentColor"
+							stroke-width="0"
+							viewBox="0 0 24 24"
+							height="1em"
+							width="1em"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								d="M9 11.24V7.5C9 6.12 10.12 5 11.5 5S14 6.12 14 7.5v3.74c1.21-.81 2-2.18 2-3.74C16 5.01 13.99 3 11.5 3S7 5.01 7 7.5c0 1.56.79 2.93 2 3.74zm9.84 4.63l-4.54-2.26c-.17-.07-.35-.11-.54-.11H13v-6c0-.83-.67-1.5-1.5-1.5S10 6.67 10 7.5v10.74l-3.43-.72c-.08-.01-.15-.03-.24-.03-.31 0-.59.13-.79.33l-.79.8 4.94 4.94c.27.27.65.44 1.06.44h6.79c.75 0 1.33-.55 1.44-1.28l.75-5.27c.01-.07.02-.14.02-.2 0-.62-.38-1.16-.91-1.38z"
+							></path>
+						</svg>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce</p>
+						<button class="btn primary-btn">Apply</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="buyer-stories">
+				<h2 class="secondary-header">Buyer's stories</h2>
+				<div class="story-container center">
+					<div class="story">
+						<div class="small-img-placeholder">img goes here</div>
+						<div class="text-container">
+							<h2><a href="#" class="story-header text-link">Help to Buy secures dream family home by the coast!</a></h2>
+							<p>
+								When Deene Tether and his wife Louise decided to move out of rented accommodation and find a home of their own they assumed they
+								weren't eligible for the government's Help to Buy scheme as they had both owned homes previously.
+							</p>
+						</div>
+					</div>
+					<div class="story">
+						<div class="small-img-placeholder">img goes here</div>
+						<div class="text-container">
+							<h2><a href="#" class="story-header text-link">Help to Buy allows parents to-be buy bigger at Broadacres</a></h2>
+							<p>Kayleigh Stevens (29) and Josh Morris (28).moved back in with their parents to make home ownership a reality.</p>
+						</div>
+					</div>
+					<div class="story">
+						<div class="small-img-placeholder">img goes here</div>
+						<div class="text-container">
+							<h2><a href="#" class="story-header text-link">Help to buy gives Kelly and Adam their first home together!</a></h2>
+							<p>
+								For Kelly and Adam a new-build home was the dream. Kelly had bought her previous home with her dad, a builder, and lived through
+								months of renovation work complete with noise, dust and cold draughts.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="equity-loan-container center">
+				<div class="equity-loan center">
+					<h2 class="secondary-header">I want to buy a property, through Help to Buy: Equity Loan for...</h2>
+
+					<div class="slider-section">
+						<div>slider goes here</div>
+						<div>number part of slider</div>
+					</div>
+
+					<div class="radio-container">
+						<p>Your purchase could be made up of...</p>
+						<div class="radios">
+							<div class="text-center outside">
+								<input type="radio" class="type-radio" id="outside-radio" name="inside-outside-radio" />
+								<label for="outside-radio">Outside London</label>
+							</div>
+
+							<div class="text-center inside">
+								<input type="radio" class="type-radio" id="inside-radio" name="inside-outside-radio" />
+								<label for="inside-radio">Inside London</label>
+							</div>
+						</div>
+					</div>
+
+					<table class="loan-table">
+						<tr>
+							<td>Deposit</td>
+							<td class="yellow">£000,000</td>
+							<td class="yellow">5%</td>
+						</tr>
+						<tr>
+							<td>Equity Loan</td>
+							<td class="yellow">£000,000</td>
+							<td class="yellow">20%</td>
+						</tr>
+						<tr>
+							<td>Mortgage</td>
+							<td class="yellow">£000,000</td>
+							<td class="yellow">75%</td>
+						</tr>
+					</table>
+
+					<p class="repo-warning">Your house may be repossessed if you do not keep up payments on a mortgage or any other loan secured against it</p>
+
+					<div class="disclaimer-text">
+						<p>
+							These figures are an illustration, to help you understand how Help to Buy: Equity Loan works. They do not represent the amounts you
+							may be able to borrow.
+						</p>
+						<p>
+							&#60;&#60;Organisation name&#62;&#62; is not regulated to provide financial advice. It is important that you seek
+							<a href="#" class="text-link dark-bg"> professional advice</a>
+							from a mortgage advisor or financial advisor, to understand the options available to you based on your individual circumstance.
+						</p>
+						<p>Please note that equity loan rates are diferent for properties purchased inside of London.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="news-container">
+				<h2 class="heading-secondary">News & Events</h2>
+				<div class="news-events center">
+					<div class="news-preview">
+						<div class="text-container">
+							<h2 class="news-title">
+								<a href="#" class="news-link">This is a news item title that links to the full story</a>
+							</h2>
+							<p class="date">29 April 2022</p>
+							<p class="news-text">
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
+								aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+							</p>
+						</div>
+					</div>
+					<div class="news-preview">
+						<div class="text-container">
+							<h2 class="news-title">
+								<a href="#" class="news-link">This is a news item title that links to the full story</a>
+							</h2>
+							<p class="date">29 April 2022</p>
+							<p class="news-text">
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+							</p>
+						</div>
+					</div>
+					<div class="news-preview">
+						<div class="text-container">
+							<h2 class="news-title">
+								<a href="#" class="news-link">This is a news item title that links to the full story</a>
+							</h2>
+							<p class="date news-event">29 April 2022</p>
+							<p class="news-text">
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+							</p>
+						</div>
+					</div>
+
+					<button class="btn primary-btn news-btn">More News and Events</button>
+				</div>
+			</div>
+
+			<section class="newsletter">
+				<div class="newsletter-container">
+					<div>	
+						<h2 class="newsletter-header">Newsletter Signup</h2>
+						<p class="newsletter-text">
+							We would like to send you regular updates about Help to Buy
+							news, events, and properties. By providing your email
+							address you agree to recieve these.<br />
+						</p>
+						<p class="unsub">You can unsubscribe at any time.</p>
+					</div>
+					<div class="information-input">
+						<form action="#">
+							
+							<input
+							type="email"
+							aria-label="email"
+							placeholder="Enter your email"
+							required
+							/>
+							<button class="btn primary-btn dark-bg">Sign Up</button>
+						</div>
+					</form>
+					<p class="privacy-policy">
+						We promise to keep your data safe and will never sell it to
+						third parties. "We" include Homes England, it's appointed
+						agents, and mortgage administrator. For further information
+						about how your data is stored and used, please see
+						<a href="#" class="text-link dark-bg"> our privacy poilcy</a>.
+					</p>
+				</div>
+			</section>
+		</main>
 
 		<footer class="footer">
 			<div class="footer-container">
