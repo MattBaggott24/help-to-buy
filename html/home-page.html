@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../dist/css/main.css" />
 		<link rel="stylesheet" href="../dist/css/home-page.css" />
+		<script src="../js/slider.js" defer></script>
+
 		<title>Home Page</title>
 	</head>
 	<body>
@@ -41,7 +43,7 @@
 
 			<!-- TODO::: overlap the search bar -->
 
-			<div class="search-container center">
+			<div class="search-container">
 				<p class="search-header">Property Search</p>
 				<div class="search-group">
 					<input type="text" class="search-bar" aria-label="search bar" placeholder="Enter a town, region or postcode" />
@@ -151,9 +153,15 @@
 				<div class="equity-loan center">
 					<h2 class="secondary-header">I want to buy a property, through Help to Buy: Equity Loan for...</h2>
 
-					<div class="slider-section">
-						<div>slider goes here</div>
-						<div>number part of slider</div>
+					<div class="slider-container">
+						<p>Min £80,000</p>
+						<input type="range" min="80000" max="600000" value="120000" step="10000" class="slider" id="myRange" aria-label="price-slider"/>
+						<p>Max £600,000</p>
+					</div>
+
+					<div class="price-input">
+						<label for="price-box">Enter a property price (£) </label>
+						<input type="text" id="price-box" class="price-box">
 					</div>
 
 					<div class="radio-container">

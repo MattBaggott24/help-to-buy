@@ -1,6 +1,10 @@
 @import "variables";
 @import "main.scss";
 
+main {
+	position: relative;
+}
+
 .placeholder-img {
 	display: flex;
 	align-items: center;
@@ -19,7 +23,6 @@
 	padding: 2.4rem 6.4rem;
 
 	display: flex;
-	margin: 0 auto;
 	gap: 2.4rem;
 	width: 80vw;
 
@@ -27,6 +30,10 @@
 	justify-content: center;
 
 	font-size: 1.6rem;
+
+	position: absolute;
+	top: 9.4%;
+	left: 10%;
 
 	.search-header {
 		font-size: 3.2rem;
@@ -52,7 +59,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 3.2rem 3.2rem 4.8rem 3.2rem;
+	padding: 7.2rem 3.2rem 4.8rem 3.2rem;
 	gap: 3.2rem;
 
 	background-color: $form-background;
@@ -168,6 +175,7 @@
 .equity-loan-container {
 	width: 80vw;
 	background-color: $background-green;
+
 	.equity-loan {
 		width: 95rem;
 		display: flex;
@@ -181,13 +189,47 @@
 		align-items: center;
 
 		.secondary-header {
-			font-size: 2.8rem;
+			font-size: 2.6rem;
 		}
 
-		.slider-section {
-			background-color: orange;
-			padding: 1.2rem 3.2rem;
-			border-radius: 9px;
+		.slider-container {
+			width: 100rem;
+			display: flex;
+			font-size: 2.2rem;
+			gap: 1.2rem;
+			align-items: center;
+			white-space: nowrap;
+			.slider {
+				width: 100%;
+				appearance: none;
+				background-color: $primary-green;
+				height: 5px;
+				border-radius: 1000rem;
+				&::-webkit-slider-thumb {
+					appearance: none;
+					background-color: $primary-yellow;
+					height: 3.6rem;
+					width: 3.6rem;
+					border-radius: 50%;
+				}
+				&:focus {
+					outline: none;
+				}
+			}
+		}
+
+		.price-input {
+			display: flex;
+			align-items: center;
+			gap: 1.2rem;
+			.price-box {
+				width: 18rem;
+				font-weight: 600;
+				font-size: 2.4rem;
+				color: $price-slider-text;
+				padding: 0.6rem 1.2rem;
+				border: none;
+			}
 		}
 
 		.radio-container {
