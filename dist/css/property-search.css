@@ -349,8 +349,8 @@ ol li {
 
 .footer-container {
   background-color: #006469;
-  width: 100%;
   height: 30rem;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -741,14 +741,39 @@ body {
   background-color: #fd0;
 }
 
-.search-section .small-selection,
-.search-section .large-selection {
+.search-section .select-div {
+  position: relative;
+}
+
+.search-section .select-div::after {
+  content: "<>";
+  font: 17px "Consolas";
+  color: #fd0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 1rem;
+  top: 4.1rem;
+  /*Adjust for position however you want*/
+  /*left line */
+  position: absolute;
+}
+
+.search-section .select-div select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+  width: 100%;
+  max-width: 320px;
   height: 4.2rem;
-  background-color: #006469;
-  border: 2px solid #fff;
+  padding: 0.6rem;
+  font-size: 1.6rem;
+  line-height: 1.75;
   color: #fff;
-  padding-left: 0.6rem;
-  cursor: pointer;
+  background-color: #006469;
+  background-image: none;
+  border: 1px solid #cccccc;
+  word-break: normal;
 }
 
 .search-section .small-selection {

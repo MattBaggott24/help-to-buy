@@ -223,14 +223,56 @@ body {
 		}
 	}
 
-	.small-selection,
-	.large-selection {
-		height: 4.2rem;
-		background-color: $background-green;
-		border: 2px solid #fff;
-		color: #fff;
-		padding-left: 0.6rem;
-		cursor: pointer;
+	// .small-selection,
+	// .large-selection {
+	// 	height: 4.2rem;
+	// 	background-color: $background-green;
+	// 	// border: 2px solid #fff;
+	// 	color: #fff;
+	// 	padding-left: 0.6rem;
+	// 	cursor: pointer;
+
+	// 	// appearance: none;
+	// 	position: relative;
+	// }
+
+	.select-div {
+		position: relative;
+		&::after {
+			content: "<>";
+			font: 17px "Consolas";
+			color: $primary-yellow;
+			transform: rotate(90deg);
+			right: 1rem;
+			top: 4.1rem;
+			/*Adjust for position however you want*/
+
+			// top: 18px;
+			// padding: 0 0 2px;
+			// border-bottom: 1px solid #999;
+			/*left line */
+
+			position: absolute;
+			// pointer-events: none;
+		}
+
+		select {
+			appearance: none;
+			display: block;
+			width: 100%;
+			max-width: 320px;
+			height: 4.2rem;
+			// float: right;
+			// margin: 5px 0px;
+			padding: 0.6rem;
+			font-size: 1.6rem;
+			line-height: 1.75;
+			color: #fff;
+			background-color: $background-green;
+			background-image: none;
+			border: 1px solid #cccccc;
+			word-break: normal;
+		}
 	}
 	.small-selection {
 		width: 16rem;
