@@ -45,6 +45,13 @@ ol li {
   color: #006469;
 }
 
+.heading-primary {
+  font-weight: 600;
+  font-size: 4.8rem;
+  color: #016469;
+  padding-bottom: 2.4rem;
+}
+
 .logo {
   height: 7.2rem;
   width: 7.2rem;
@@ -118,6 +125,16 @@ ol li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 1.2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.horiz-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 1.2rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -220,13 +237,6 @@ ol li {
 
 .current {
   background-color: #fd0;
-}
-
-.heading-primary {
-  font-weight: 600;
-  font-size: 4.8rem;
-  color: #016469;
-  padding-bottom: 2.4rem;
 }
 
 .page-selector {
@@ -341,6 +351,124 @@ ol li {
   height: 4.2rem;
   padding-left: 1.2rem;
   font-size: 1.6rem;
+}
+
+.radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  padding: 0 0.4rem;
+}
+
+.radios-input {
+  width: 2.2rem;
+  height: 2.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px white;
+          box-shadow: 0 0 0 1px white;
+}
+
+.radios-input:checked {
+  border: 5px solid #006469;
+  background-color: #fd0;
+}
+
+.radios label {
+  font-weight: 400 !important;
+}
+
+.select-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.select-container .selecter {
+  height: 4.2rem;
+  width: 20rem;
+  font-size: 1.6rem;
+  color: #4c4c4c;
+  padding: 1rem;
+}
+
+.select-container label {
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #4c4c4c;
+  margin-bottom: 0.6rem;
+}
+
+.check-contain {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 0.4rem;
+}
+
+.check-contain *,
+.check-contain *::before,
+.check-contain *::after {
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+}
+
+.check-contain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.check-contain span {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding-left: 2.4rem;
+}
+
+.check-contain {
+  display: table;
+  position: relative;
+  padding-left: 1.8rem;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 0rem;
+}
+
+.check-contain input[type="checkbox"] ~ .check-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 1rem;
+  top: 0.18rem;
+  width: 1rem;
+  height: 2rem;
+  border: solid #ffdd00;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.check-contain input:checked ~ .check-input::after {
+  display: block;
 }
 
 .footer {
@@ -517,31 +645,6 @@ body {
           justify-content: space-between;
 }
 
-.sort-section .sort-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.sort-section .sort-container .sorter {
-  height: 4.2rem;
-  width: 20rem;
-  font-size: 1.6rem;
-  color: #676767;
-  padding: 1rem;
-}
-
-.sort-section label {
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: #676767;
-  margin-bottom: 0.6rem;
-}
-
 .preview-panel-container {
   display: -ms-grid;
   display: grid;
@@ -711,41 +814,11 @@ body {
   gap: 1rem;
 }
 
-.search-section .buy-rent .buy-rent-radio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.8rem;
-}
-
-.search-section .buy-rent .buy-rent-radio label {
-  font-weight: 500;
-}
-
-.search-section .buy-rent .buy-rent-radio .type-radio {
-  width: 2.2rem;
-  height: 2.2rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 1px white;
-          box-shadow: 0 0 0 1px white;
-}
-
-.search-section .buy-rent .buy-rent-radio .type-radio:checked {
-  border: 5px solid #006469;
-  background-color: #fd0;
-}
-
-.search-section .select-div {
+.select-div {
   position: relative;
 }
 
-.search-section .select-div::after {
+.select-div::after {
   content: "<>";
   font: 17px "Consolas";
   color: #fd0;
@@ -753,12 +826,10 @@ body {
           transform: rotate(90deg);
   right: 1rem;
   top: 4.1rem;
-  /*Adjust for position however you want*/
-  /*left line */
   position: absolute;
 }
 
-.search-section .select-div select {
+.select-div select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -776,15 +847,15 @@ body {
   word-break: normal;
 }
 
-.search-section .small-selection {
+.small-selection {
   width: 16rem;
 }
 
-.search-section .large-selection {
+.large-selection {
   width: 24rem;
 }
 
-.search-section .must-have {
+.must-have {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,126 +864,5 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.2rem;
-}
-
-.search-section .must-have .check-option {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-}
-
-.search-section .must-have .check-option .must-have-checks {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border: 2px solid #fff;
-  height: 3.2rem;
-  width: 3.2rem;
-}
-
-.search-section .must-have .check-option .must-have-checks:checked {
-  stroke: #fd0;
-}
-
-.search-section .must-have .check-option .must-have-checks:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.check-contain {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 0.4rem;
-}
-
-.check-contain *,
-.check-contain *::before,
-.check-contain *::after {
-  -webkit-box-sizing: content-box !important;
-          box-sizing: content-box !important;
-}
-
-.check-contain input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-
-.check-contain span {
-  line-height: 1.5;
-  font-size: 1.6rem;
-  font-family: inherit;
-  padding-left: 2.4rem;
-}
-
-.check-contain {
-  display: table;
-  position: relative;
-  padding-left: 1.8rem;
-  cursor: pointer;
-  margin-bottom: 0.5rem;
-}
-
-.check-contain input[type="checkbox"] ~ .check-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  width: 3rem;
-  border: 2px solid white;
-  border-radius: 0rem;
-}
-
-.check-contain input[type="radio"] ~ .check-input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  width: 3rem;
-  background: rgba(241, 245, 248, 0);
-  -webkit-transition: background 250ms;
-  transition: background 250ms;
-  border: 2px solid white;
-  border-radius: 2rem;
-}
-
-.check-contain input[type="checkbox"] ~ .check-input::after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 1rem;
-  top: 0.18rem;
-  width: 1rem;
-  height: 2rem;
-  border: solid #ffdd00;
-  border-width: 0 2px 2px 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.check-contain input[type="radio"] ~ .check-input::after {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 0.25rem;
-  top: 0.25rem;
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 2rem;
-  background: #ffdd00;
-}
-
-.check-contain input:checked ~ .check-input::after {
-  display: block;
 }
 /*# sourceMappingURL=property-search.css.map */

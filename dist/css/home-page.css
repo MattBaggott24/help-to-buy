@@ -124,6 +124,16 @@ ol li {
           align-items: flex-start;
 }
 
+.horiz-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .header {
   background-color: #006469;
 }
@@ -341,6 +351,37 @@ ol li {
   height: 4.2rem;
   padding-left: 1.2rem;
   font-size: 1.6rem;
+}
+
+.radios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.6rem;
+  padding: 0 0.4rem;
+}
+
+.radios-input {
+  width: 2.2rem;
+  height: 2.2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px white;
+          box-shadow: 0 0 0 1px white;
+}
+
+.radios-input:checked {
+  border: 5px solid #006469;
+  background-color: #fd0;
+}
+
+.radios label {
+  font-weight: 400 !important;
 }
 
 .footer {
@@ -756,34 +797,7 @@ main {
 }
 
 .equity-loan-container .equity-loan .radio-container .radios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2.4rem;
-  padding: 0 0.4rem;
-}
-
-.equity-loan-container .equity-loan .radio-container .radios .type-radio {
-  width: 2.2rem;
-  height: 2.2rem;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 0 1px white;
-          box-shadow: 0 0 0 1px white;
-}
-
-.equity-loan-container .equity-loan .radio-container .radios .type-radio:checked {
-  border: 5px solid #006469;
-  background-color: #fd0;
-}
-
-.equity-loan-container .equity-loan .radio-container .radios label {
-  margin: 0.6rem;
+  gap: 1.2rem;
 }
 
 .equity-loan-container .equity-loan .loan-table {

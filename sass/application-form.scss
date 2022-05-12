@@ -83,13 +83,7 @@ body {
 		}
 	}
 
-	.scheme-radio {
-		width: 2.4rem;
-		height: 2.4rem;
-		align-self: center;
-
-		appearance: none;
-		border-radius: 50%;
+	.application-radio {
 		background-color: #fff;
 		border: 1px solid $secondary-text;
 
@@ -138,6 +132,7 @@ body {
 	.bedrooms {
 		display: flex;
 		flex-direction: column;
+		gap: 0.6rem;
 
 		label {
 			display: inline-block;
@@ -150,20 +145,12 @@ body {
 		flex-direction: column;
 		gap: 1.2rem;
 
-		.reason {
-			display: flex;
-			gap: 0.8rem;
-			label {
-				display: inline-block;
-				align-self: center;
-			}
-			input[type="checkbox"] {
-				height: 3.2rem;
-				width: 3.2rem;
-				appearance: none;
-				outline: 1px solid $secondary-text;
-				border-radius: none;
-			}
+		.check-contain input[type="checkbox"] ~ .check-input {
+			border: 1px solid $secondary-text;
+		}
+		.check-contain input[type="checkbox"] ~ .check-input::after {
+			border: solid $secondary-text;
+			border-width: 0 2px 2px 0;
 		}
 	}
 }

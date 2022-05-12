@@ -240,27 +240,9 @@ main {
 			p {
 				font-size: 2.2rem;
 			}
+
 			.radios {
-				display: flex;
-				gap: 2.4rem;
-				padding: 0 0.4rem;
-				.type-radio {
-					width: 2.2rem;
-					height: 2.2rem;
-					align-self: center;
-
-					appearance: none;
-					border-radius: 50%;
-					box-shadow: 0 0 0 1px white;
-
-					&:checked {
-						border: 5px solid $background-green;
-						background-color: $primary-yellow;
-					}
-				}
-				label {
-					margin: 0.6rem;
-				}
+				gap: 1.2rem;
 			}
 		}
 		.loan-table {
